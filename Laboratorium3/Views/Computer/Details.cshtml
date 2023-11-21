@@ -1,0 +1,36 @@
+﻿@model Computer
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Szczegóły Komputera</h1>
+<form asp-controller="Computer" asp-action="Details" method="post">
+
+    <label asp-for="Nazwa"></label>
+    <input class="form-control" asp-for="Nazwa" readonly />
+    <span class="text-danger" asp-validation-for="Nazwa"></span>
+
+    <label asp-for="Procesor"></label>
+    <input class="form-control" asp-for="Procesor" readonly />
+    <span class="text-danger" asp-validation-for="Procesor"></span>
+
+    <label asp-for="Memory"></label>
+    <input class="form-control" asp-for="Memory" readonly />
+    <span class="text-danger" asp-validation-for="Memory"></span>
+
+    <label asp-for="Producent"></label>
+    <input class="form-control" asp-for="Producent" readonly />
+    <span class="text-danger" asp-validation-for="Producent"></span>
+
+    <label asp-for="Karta_Graficzna"></label>
+    <input class="form-control" asp-for="Karta_Graficzna" readonly />
+    <span class="text-danger" asp-validation-for="Karta_Graficzna"></span>
+
+    <label asp-for="Data_Produkcji"></label>
+    <input class="form-control" readonly placeholder="@Model.Data_Produkcji.ToString("dd MMMM yyyy")" />
+    <span class="text-danger" asp-validation-for="Data_Produkcji"></span>
+
+    <button type="submit">Wróć</button>
+
+</form>

@@ -1,0 +1,68 @@
+﻿@model List<Computer>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Spis Komputerów</h1>
+<a class="btn btn-primary" asp-controller="Computer" asp-action="Create">Dodaj Komputer</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nazwa
+            </th>
+            <th>
+                Procesor
+            </th>
+            <th>
+                Pamięć
+            </th>
+            <th>
+                Karta Graficzna
+            </th>
+            <th>
+                Producent
+            </th>
+            <th>
+                Data Produkcji
+            </th>
+            <th>
+                Akcje
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Computer item in @Model)
+        {
+            <tr>
+                <td>
+                    @item.Nazwa
+                </td>
+                <td>
+                    @item.Procesor
+                </td>
+                <td>
+                    @item.Memory GB
+                </td>
+                <td>
+                    @item.Karta_Graficzna
+                </td>
+                <td>
+                    @item.Producent
+                </td>
+
+                <td>
+                    @item.Data_Produkcji.ToString("dd MMMM yyyy")
+                </td>
+
+                <td>
+                    <a asp-action="Update" asp-route-id="@item.Id">Edytuj</a>
+                    <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

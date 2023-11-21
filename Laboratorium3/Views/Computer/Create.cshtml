@@ -1,0 +1,40 @@
+﻿@model Computer
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Dodaj Komputer</h1>
+<form asp-controller="Computer" asp-action="Create" method="post">
+
+    <label asp-for="Nazwa"></label>
+    <input class="form-control" asp-for="Nazwa" />
+    <span class="text-danger" asp-validation-for="Nazwa"></span>
+
+    <label asp-for="Procesor"></label>
+    <input class="form-control" asp-for="Procesor" />
+    <span class="text-danger" asp-validation-for="Procesor"></span>
+
+    <label asp-for="Memory"></label>
+    <input class="form-control" asp-for="Memory" />
+    <span class="text-danger" asp-validation-for="Memory"></span>
+
+    <label asp-for="Karta_Graficzna"></label>
+    <input class="form-control" asp-for="Karta_Graficzna" />
+    <span class="text-danger" asp-validation-for="Karta_Graficzna"></span>
+
+    <label asp-for="Producent"></label>
+    <input class="form-control" asp-for="Producent" />
+    <span class="text-danger" asp-validation-for="Producent"></span>
+
+    <label asp-for="Data_Produkcji"></label>
+    <input class="form-control" asp-for="Data_Produkcji" />
+    <span class="text-danger" asp-validation-for="Data_Produkcji"></span>
+
+    <button type="submit">Dodaj</button>
+
+    <a asp-controller="Computer" asp-action="Index" method="post">
+        <button type="button">Powrót</button>
+    </a>
+</form>
+
