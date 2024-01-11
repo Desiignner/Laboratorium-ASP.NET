@@ -1,4 +1,14 @@
 using Laboratorium3.Models;
+using System.Xml.Linq;
+using Data;
+using Data.Entities;
+using Laboratorium3.Mappers;
+using Laboratorium3.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 
 namespace Laboratorium3
 {
@@ -12,6 +22,8 @@ namespace Laboratorium3
             builder.Services.AddControllersWithViews();
             builder.Services.AddSingleton<IContactService, MemoryContactServices>();
             builder.Services.AddSingleton<IComputerService, MemoryComputerServices>();
+            builder.Services.AddDbContext<Data.AppDbContext>();
+            builder.Services.AddTransient<IComputerService, EFComputerService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

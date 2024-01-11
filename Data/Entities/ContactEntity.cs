@@ -11,7 +11,7 @@ namespace Data.Entities
     [Table("contacts")]
     public class ContactEntity
     {
-        [Key]
+        //[Key]
         public int Id { get; set; }
         [Column("name")]
 

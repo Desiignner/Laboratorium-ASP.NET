@@ -11,15 +11,15 @@ namespace Data.Entities
     [Table("computer")]
     public class ComputerEntity
     {
-        [Required]
+        
         [Key]
-        public int Id { get; set; }
+        public int ComputerId { get; set; }
 
         public string Nazwa { get; set; }
 
         public string Procesor { get; set; }
-
-        public string Memory { get; set; }
+        
+        public int Memory { get; set; }
         [MaxLength(5)]
         public string Karta_Graficzna { get; set; }
 
