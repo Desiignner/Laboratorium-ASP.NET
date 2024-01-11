@@ -6,7 +6,8 @@ namespace Laboratorium3.Models
 
     public class Computer
     {
-        [HiddenInput]
+        [Key]
+        [Required]
         public int Id { get; set; }
 
         public string Nazwa { get; set; }
