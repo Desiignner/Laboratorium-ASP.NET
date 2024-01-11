@@ -30,7 +30,7 @@ namespace Data.Entities
         public DateTime Data_Produkcji { get; set; }
 
         [Display(Name = "Priorytet")]
-        public Priority Priority { get; set; }
+        public int Priority { get; set; }
 
     }
 }

@@ -23,9 +23,9 @@ namespace Data.Entities
 
             protected override void OnModelCreating(ModelBuilder modelBuilder)
             {
-                modelBuilder.Entity<ContactEntity>().HasData(
-                    new ComputerEntity() { Id = 1, Nazwa = "Domowy", Procesor = "Intel Core i5-12400F", Memory = "8", Karta_Graficzna = "Brak", Producent = "MSI", Data_Produkcji = new DateTime(2021, 10, 20) , Priority = 0 },
-                    new ComputerEntity() { Id = 1, Nazwa = "Gamingowy", Procesor = "INTEL Core i9-13900KF", Memory = "32", Karta_Graficzna = "MSI GeForce RTX 4060 Gaming X 8GB", Producent = "Asus", Data_Produkcji = new DateTime(2023, 11, 23), Priority = 0 }
+                modelBuilder.Entity<ComputerEntity>().HasData(
+                    new ComputerEntity() { Id = 1, Nazwa = "Domowy", Procesor = "Intel Core i5-12400F", Memory = "8", Karta_Graficzna = "Brak", Producent = "MSI", Data_Produkcji = new DateTime(2021, 10, 20) , Priority = 1 },
+                    new ComputerEntity() { Id = 1, Nazwa = "Gamingowy", Procesor = "INTEL Core i9-13900KF", Memory = "32", Karta_Graficzna = "MSI GeForce RTX 4060 Gaming X 8GB", Producent = "Asus", Data_Produkcji = new DateTime(2023, 11, 23), Priority = 1 }
                 );
             }
         }
