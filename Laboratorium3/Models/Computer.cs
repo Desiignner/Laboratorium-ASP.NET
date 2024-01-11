@@ -21,8 +21,12 @@ namespace Laboratorium3.Models
 
         public string Producent { get; set; }
 
+
         [DataType(DataType.Date)]
         public DateTime Data_Produkcji { get; set; }
+
+        [Display(Name = "Priorytet")]
+        public Priority Priority { get; set; }
 
 
 
