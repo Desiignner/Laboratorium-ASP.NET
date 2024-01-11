@@ -28,9 +28,13 @@
     <span class="text-danger" asp-validation-for="Karta_Graficzna"></span>
 
     <label asp-for="Data_Produkcji"></label>
-    <input class="form-control" readonly placeholder="@Model.Data_Produkcji.ToString("dd MMMM yyyy")" />
+    <input class="form-control" readonly placeholder="@Model.Data_Produkcji.ToString("dd mmmm yyyy")" />
     <span class="text-danger" asp-validation-for="Data_Produkcji"></span>
 
-    <button type="submit">Wróć</button>
+    
+
+    <a asp-controller="Computer" asp-action="Index" method="post">
+        <button type="button">Powrót</button>
+    </a>
 
 </form>
