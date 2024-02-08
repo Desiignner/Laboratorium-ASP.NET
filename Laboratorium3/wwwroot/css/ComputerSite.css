@@ -1,12 +1,15 @@
 /* Set base font size */
 html {
     font-size: 14px;
+    
 }
 
 /* Increase font size on larger screens */
 @media (min-width: 768px) {
     html {
         font-size: 16px;
+        background-color: greenyellow;
+        border-color white;
     }
 }
 
@@ -23,6 +26,7 @@ html {
 html {
     position: relative;
     min-height: 100%;
+    
 }
 
 /* Add some margin at the bottom of the body */
@@ -30,14 +34,15 @@ body {
     margin-bottom: 60px;
     background-color: greenyellow;
     color: #333; /* Text color */
+    
 }
 
 /* Center align buttons */
 .btn {
     display: block;
     margin: 0 auto;
-    background-color: #258cfb; /* Blue color */
-    color: white; /* Text color */
+    background-color: yellow; /* Yellow color */
+    color: black; /* Text color */
     padding: 12px 24px; /* Increase padding for a more prominent appearance */
     border-radius: 5px;
     border: none;
@@ -45,6 +50,7 @@ body {
     font-size: 16px; /* Increase font size */
     font-weight: bold; /* Add font weight */
     transition: background-color 0.3s; /* Smooth transition on hover */
+    text-shadow: 0 0 5px white; /* White shadow around text */
 }
 
     /* Hover effect */
@@ -53,5 +59,28 @@ body {
         transform: translateY(-2px); /* Move button up on hover */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
     }
+
+
+
+/* Style for table cells */
+.table td, .table th {
+    border: 1px solid black; /* Set border for cells */
+    padding: 8px; /* Add padding */
+    background-color white;
+}
+
+/* Additional styling modifications can go here */
+
+
+/* Style for top menu */
+.top-menu {
+    background-color: #258cfb; /* Blue color */
+    color: white; /* Text color */
+}
+
+/* Background color for information section */
+.info-section {
+    background-color: white; /* White background */
+}
 
 /* Additional styling modifications can go here */

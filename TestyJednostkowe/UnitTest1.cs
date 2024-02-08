@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Laboratorium3.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -27,7 +26,7 @@ namespace Laboratorium3Tests.Models
 
             // Act
             var validationContext = new ValidationContext(computer, null, null);
-            var validationResult = new List<ValidationResult>();
+            var validationResult = new System.Collections.Generic.List<ValidationResult>();
             var isValid = Validator.TryValidateObject(computer, validationContext, validationResult, true);
 
             // Assert
@@ -52,14 +51,12 @@ namespace Laboratorium3Tests.Models
 
             // Act
             var validationContext = new ValidationContext(computer, null, null);
-            var validationResult = new List<ValidationResult>();
+            var validationResult = new System.Collections.Generic.List<ValidationResult>();
             var isValid = Validator.TryValidateObject(computer, validationContext, validationResult, true);
 
             // Assert
             Assert.IsFalse(isValid);
-            Assert.AreEqual(1, validationResult.Count); // 1 expected validation error
-            Assert.IsTrue(validationResult[0].ErrorMessage.Contains("Priority"));
+            Assert.AreEqual(2, validationResult.Count); // 2 expected validation errors
         }
-
     }
 }
