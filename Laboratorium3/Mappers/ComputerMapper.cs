@@ -10,8 +10,7 @@ namespace Laboratorium3.Mappers
         {
             return new Computer()
             {
-<<<<<<< HEAD
-=======
+
                 Id = entity.ComputerId,
                 Nazwa = entity.Nazwa,
                 Procesor = entity.Procesor,
@@ -20,17 +19,13 @@ namespace Laboratorium3.Mappers
                 Producent = entity.Producent,
                 Data_Produkcji = entity.Data_Produkcji,
                 Priority = (Priority)entity.Priority,
->>>>>>> DB working
 
             };
         }
 
-<<<<<<< HEAD
-        public static ComputerEntity ToEntity(Contact model)
-        {
-            return new ComputerEntity()
-            {
-=======
+
+
+
         public static ComputerEntity ToEntity(Computer model)
         {
             return new ComputerEntity()
@@ -44,9 +39,10 @@ namespace Laboratorium3.Mappers
                 Data_Produkcji = model.Data_Produkcji,
                 Priority = Convert.ToInt32(model.Priority),
 
->>>>>>> DB working
+
 
             };
         }
     }
 }
+
