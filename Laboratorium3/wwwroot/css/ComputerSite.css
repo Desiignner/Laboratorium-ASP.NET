@@ -1,0 +1,57 @@
+/* Set base font size */
+html {
+    font-size: 14px;
+}
+
+/* Increase font size on larger screens */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Add focus styles for interactive elements */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb; /* Blue color */
+}
+
+/* Ensure body covers the viewport */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* Add some margin at the bottom of the body */
+body {
+    margin-bottom: 60px;
+    background-color: greenyellow;
+    color: #333; /* Text color */
+}
+
+/* Center align buttons */
+.btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #258cfb; /* Blue color */
+    color: white; /* Text color */
+    padding: 12px 24px; /* Increase padding for a more prominent appearance */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+    font-weight: bold; /* Add font weight */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+    /* Hover effect */
+    .btn:hover {
+        background-color: #1e70bf; /* Darker shade of blue on hover */
+        transform: translateY(-2px); /* Move button up on hover */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    }
+
+/* Additional styling modifications can go here */
