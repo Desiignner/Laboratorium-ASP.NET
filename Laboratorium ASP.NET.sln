@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Labolatorium2", "Labolatori
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laboratorium3", "Laboratorium3\Laboratorium3.csproj", "{AEA06FDE-8C74-4A03-9D29-08F741220046}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{C9ECC654-5139-492C-A087-A1E90BA3D965}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{C9ECC654-5139-492C-A087-A1E90BA3D965}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestyJednostkowe", "TestyJednostkowe\TestyJednostkowe.csproj", "{B84ECD2F-8922-4469-9EA0-8BB993369546}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C9ECC654-5139-492C-A087-A1E90BA3D965}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9ECC654-5139-492C-A087-A1E90BA3D965}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9ECC654-5139-492C-A087-A1E90BA3D965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84ECD2F-8922-4469-9EA0-8BB993369546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84ECD2F-8922-4469-9EA0-8BB993369546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84ECD2F-8922-4469-9EA0-8BB993369546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84ECD2F-8922-4469-9EA0-8BB993369546}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
