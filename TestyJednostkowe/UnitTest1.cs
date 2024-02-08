@@ -47,7 +47,7 @@ namespace Laboratorium3Tests.Models
                 Karta_Graficzna = "Testowa Karta Graficzna",
                 Producent = "Testowy Producent",
                 Data_Produkcji = DateTime.Now,
-                Priority = (Priority)100 // Invalid, assuming Priority enum does not have value 100
+                Priority = (Priority)100 // Invalid value for Priority enum
             };
 
             // Act
@@ -57,7 +57,9 @@ namespace Laboratorium3Tests.Models
 
             // Assert
             Assert.IsFalse(isValid);
-            Assert.AreEqual(2, validationResult.Count); // 2 expected validation errors
+            Assert.AreEqual(1, validationResult.Count); // 1 expected validation error
+            Assert.IsTrue(validationResult[0].ErrorMessage.Contains("Priority"));
         }
+
     }
 }
